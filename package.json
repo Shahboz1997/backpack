@@ -1,5 +1,4 @@
-{
-  "name": "backpack",
+  {"name": "backpack",
   "version": "1.0.0",
   "description": "Website layout for selling backpacks for schoolchildren",
   "main": "index.js",

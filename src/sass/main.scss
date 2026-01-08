@@ -1,15 +1,60 @@
 $black-color:#1B1B1B;
-body{
-   background: linear-gradient(135deg, #1B1B1B 70%, rgb(35 35 52))
+*{
+    padding: 0;
+    margin: 0;
 }
-nav{
-    margin: 48px 200px;
+body{
+    background:hsl(0, 3%, 13%)
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.navbar-logo{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
+
 }
-main, footer{
-     margin: 48px 200px;
+.navbar{
+min-height: 80px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 24px;
+}
+.nav-menu{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap:60px;
+}
+.nav-branding{
+    font-size: 2rem;
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+    color: dodgerblue;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display:block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
 }
 .section, .section1, .block, .block1{
     display: flex;
@@ -17,15 +62,7 @@ main, footer{
     justify-content: center;
     gap:10px;
 }
-.logo.name{
-    font-family: "Promt";
-    font-weight: 500;
-    font-size: 24px;
-    font-style: medium;
-    line-height:100%;
-    text-transform: uppercase;
-    color:#FFFFFF;
-}
+
 .section1 .features, .catalog, .blog, .contact{
     font-size: "Promt";
     font-weight: 500;
@@ -56,6 +93,7 @@ main, footer{
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .input-cnt > input{
     outline: none;
@@ -87,7 +125,6 @@ h1{
   letter-spacing: 0%;
   color: #FFFFFF;
   line-height: 130px;
-  margin-bottom: 120px;
 }
 .secure{
     display: flex;
@@ -97,9 +134,6 @@ h1{
 .secure svg{
     padding-top: 10px;
 }
-.section{
-flex-direction: column;
-}
 .secure p{
   font-family: "Promt";
   font-weight: 400;
@@ -108,9 +142,7 @@ flex-direction: column;
   line-height: 26px;
   letter-spacing: 0%;
   color:hsl(0, 0%, 63%);
-  margin-top: 0px;
-  position: relative;
-  width: 253px;
+  
 }
 .push{
   border-radius: 10px;
@@ -123,17 +155,15 @@ flex-direction: column;
   color:#FFFFFF;
   text-align: center;
   padding: 12px 25px;
-  width: 30%;
-  margin-left:50px;
+  width: 35%;
   margin-bottom: 180px;
+  margin-left: 45px;
 }
 .network{
 display: flex;
 gap:38px;
 position: relative;
-right: 174.74px;
-width: max-content;
-margin-bottom: 119px;
+right: 174.74
 }
 .network p{
   font-family: "italic";
@@ -152,10 +182,6 @@ width:766.79px;
 height:741px;
 top: 560.95px;
 left:576.19px;
-}
-.networking{
-    margin-right: 92.74px;
-    margin-bottom: 174px;
 }
 .leanmore{
     background:linear-gradient(#FFFFFF14,#7E61FF30) ;
@@ -187,6 +213,9 @@ left:576.19px;
 }
 .main-section{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 50px;
 }
 .data span{
     font-family: "Promt";
@@ -223,6 +252,7 @@ left:576.19px;
     align-items: center;
     justify-content: space-between;
     gap:267px;
+    margin: 0 20px;
 }
 .blochchain h1{
     text-align: left;
@@ -243,6 +273,7 @@ left:576.19px;
     align-items: center;
     justify-content: space-between;
     gap:10px;
+    margin: 0 20px;
 }
 .cubix{
     margin-top: 90px;
@@ -311,6 +342,7 @@ h3{
     align-items: center;
     justify-content: space-between;
     gap: 58px;
+    margin: 10px 110px;
 }
 .feedback{
     display: flex;
@@ -338,6 +370,7 @@ h3{
     display: flex;
     align-items: flex-start;
     gap: 85px;
+    padding-bottom: 58px;
 }
 .offer{
     display: flex;
@@ -345,8 +378,6 @@ h3{
     justify-content: center;
     gap: 107px;
     margin-top: 98px;
-    margin-left: 200px;
-    margin-right: 200px;
 }
 .main-section3 p{
     text-align: center;
@@ -452,7 +483,6 @@ h3{
 }
 .platata p, .plata{
     color:hsl(0, 0%, 63%);
-    text-align: left;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -461,12 +491,13 @@ h3{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap:103px;
+    margin: 0 20px;
 }
 .smart-block{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap:130px;
 }
 
 .smart-block p{
@@ -475,7 +506,6 @@ h3{
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    padding-right:126px;
 }
 .smart-block svg{
      padding-right: 40px;
@@ -500,15 +530,16 @@ ul li{
   line-height: 26px;
   color:#FFFFFF;
   text-align: center;
-  width: 15%;
+  width: 25%;
   padding: 12px 25px;
-  margin-left:77px;
+  margin-left: 164px;
+  margin-bottom: 50px;
 }
-.snart{
-display: flex;
-align-items: center;
-justify-content: center;
-}
+// .smart{
+// display: flex;
+// align-items: center;
+// justify-content: space-between;
+// }
 .market{
   text-align: center;
   font-family: "Prompt";
@@ -555,7 +586,7 @@ justify-content: center;
    padding-top: 0px;
   padding-right: 0px;
 }
-span svg{
+.line svg{
   padding-top: 34px;
   padding-right: 31px;
 }
@@ -605,6 +636,7 @@ span svg{
   align-items: center;
   justify-content: space-between;
   gap:132px;
+  margin: 0 200px;
 }
 form{
 background: linear-gradient(#FFFFFF14,#7E61FF17);
@@ -660,7 +692,7 @@ input::placeholder{
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 100%;
+    margin: 10px 24px;
 }
 .list-items a{
     font-size: "Prompt";
@@ -678,6 +710,7 @@ input::placeholder{
     justify-content: space-between;
     border-bottom: 2px solid #FFFFFF26;
     margin-bottom: 75px;
+    margin: 10px 50px;
 }
 .footer-infomation{
     color:hsla(0, 0%, 100%, 1);
@@ -719,8 +752,299 @@ input::placeholder{
 .ipsum-block span{
     color: hsla(0, 0%, 100%, 0.39);
 }
+.web-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 53px;
+    padding-top: 115px;
+} 
+.d-none{
+    display: none;
+}
+.button-close{
+    display: none;
+}
+// .d-flex{
+//     display: flex;
+// }
+@media (max-width: 1326px){
+    .blochchain h1{
+        font-size: 48px;
+    }
+    .creation, .revie, .offer, .nftplatform, .platata, .main-section5{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+    }
+    h1, .platata h1{
+        font-size: 48px;
+        line-height: 100%;
+        line-height: 100%;
+        margin-bottom: 31px;
+        margin-left: 30px;
+    }
+    .platata p{
+        margin-bottom: 60px;
+    }
+    .startbutton{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 1165px){
+ .main-section,.revie, .creation, .section1,.section2, .offer, .main-section5{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap:10px;
+        margin-bottom: 0px;
+        margin-top: 30px;
+        line-height: 150%;
+    }
+    .push{
+        margin-bottom: 60px;
+        margin-left: 45px;
+    }
+    .input-cnt{
+        width: 40%;
+    }
+    .input-cnt input {
+        width: 75%;
+    }
+    .footer-block, .finish-page, .web-icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .logofooter{
+        text-align: left;
+    }
+    // .section{
+    //     display: none;
+    // }
 
+     h1, .blochchain h1, .platata h1{
+        font-size: 48px;
+        line-height: 100%;
+     }
+     .cube svg{
+        width: 600px;
+     }
+     .main-section5{
+        margin: 0 10px;
+   }
+}
+@media (max-width: 850px) {
+    h1, .platata h1{
+        font-size: 40px;
+        line-height:150%;
+    }
+    .cube svg{
+        width: 350px;
+    }
+    .blochchain{
+        gap:10px;
+        margin-top: 30px;
+    }
+    .network{
+        margin-bottom: 30px;
+    }
+    .market{
+        margin-top: 0px;
+    }
+        .submit input{
+        width: 53%;
+    }
+    .main-section5{
+        margin: 0 10px;
+   }
+}
+@media(max-width:1000px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+       .hamburger.active .bar:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    }
+       .hamburger.active .bar:nth-child(3){
+         transform:translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -120%;
+        top:50px;
+        background-color: hsl(0, 0%, 20%);
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        margin-bottom: 100px;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .statistic, .graph-info, .personinfomation{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+        .submit input{
+        width: 53%;
+    }
+    .main-section5{
+        gap:40px;
+    }
+    .feedback{
+    padding: 0 122px;
+  }
 
+}
+@media (max-width:700px) {
+    h1, .blochchain h1{
+        font-size: 30px;
+    }
+    .market{
+        padding-bottom: 10px;
+    }
+    .statistic, .graph-info, .personinfomation{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .submit input{
+        width: 53%;
+    }
+    .blochchain{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .revie{
+        margin: 0px;
+    }
+}
+@media(max-width:520px){
+    h1{
+        font-size: 22px;
+        text-align: center;
+        line-height: 160%;
+    }
+    .network p{
+        font-size: 18px;
+    }
+    .blochchain, 
+    .network, 
+    .networking, 
+    .more, 
+    .sectorsolution,
+    .smart, 
+    .smart-block, 
+    .statistic, 
+    .graph-info, 
+    .nftplatform,
+    .deploy{
+        text-align:center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .blochchain p{
+        text-align: center;
+    }
+    .section cube{
+        width: 300px;
+        position: relative;
+    }
+    .section cube svg{
+        position: absolute;
+        top:10px
+    }
+    
+    .getthis{
+        padding: 20px 200px
+    }
+    .deploy{
+        gap:0px;
+    }
+    .graph{
+        width: 180px;
+    }
+    .startbutton{
+        margin-left: 0;
+        margin-top: 10px;
+        width: 50%;
+    }
+    .revie{
+        margin: 0px;
+    }
+    .leanmore h2 {
+        padding: 24px 28px;
+    }
+}
+@media(max-width:400px){
+    form{
+        padding:20px 126px;
+    }
+}
+
+@media(max-width:344px){
+    .plata{
+        padding: 0 20px;
+    }
+    .section cube{
+        width: 150px;
+    }
+    .footer-block, .finish-page{
+        display: flex;
+        align-items: center;
+        /* flex-direction: column; */
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-left: 131px;
+    }
+    .navbar{
+        gap: 100%;
+    }
+    .section cube{
+        width: 205px;
+    }
+        .push{
+            width: 40%;
+            margin-left: 0;
+        }
+  main h1{
+        font-size: 20px;
+        text-align: center;
+        line-height: 188%;
+        margin-top: 31px;
+        margin-left: 198px;
+  }
+  .feedback{
+    padding: 0 136px;
+  }
+  .main-section3 p{
+    padding-left: 198px;
+  }
+  .feedback p{
+    width: 100%;
+  }
+}
 
 
 
